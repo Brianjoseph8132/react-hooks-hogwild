@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+// form for adding hogs 
 function HogForm({ addHog }) {
     const [formData, setFormData] = useState({
         name: '',

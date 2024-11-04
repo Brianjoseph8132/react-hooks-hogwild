@@ -1,5 +1,5 @@
 import React from 'react';
-
+// sortting the hogs 
 const Sort = ({ setSortOption }) => {
   return (
     <div>

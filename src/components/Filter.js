@@ -1,5 +1,5 @@
 import React from 'react';
-// to filter the greased hogs 
+// the hogs will be greased 
 const Filter = ({ setShowGreased }) => {
   return (
     <div>
