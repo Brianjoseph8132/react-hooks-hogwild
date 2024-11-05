@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // form for adding hogs 
-function HogForm({ addHog }) {
+function Form({ addHog }) {
     const [formData, setFormData] = useState({
         name: '',
         specialty: '',
@@ -141,4 +141,4 @@ const buttonStyles = {
     cursor: 'pointer'
 };
 
-export default HogForm;
+export default Form;

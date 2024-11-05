@@ -3,8 +3,8 @@ import Nav from "./Nav";
 import hogs from "../porkers_data";
 import Cards from "./Cards"; 
 import Hogsort from "./Hogsort";
-import Filter from "./Greased"; 
-import HogForm from "./Hogform"; // Import HogForm
+import Filter from "./Filter"; 
+import Form from "./Form"; // Import HogForm
 
 function App() {
   const [hogsData, setHogsData] = useState(hogs); // State to manage hogs
@@ -33,7 +33,7 @@ function App() {
       <Nav />
       <Filter setShowGreased={setShowGreased} />
       <Hogsort setSortOption={setSortOption} />
-      <HogForm addHog={addHog} /> {/* Render HogForm and pass addHog */}
+      <Form addHog={addHog} /> {/* Render HogForm and pass addHog */}
       {sortedHogs.map((hog) => (
         <Cards
           key={hog.name} // Use a unique ID if available
