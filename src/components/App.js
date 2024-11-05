@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Nav from "./Nav";
 import hogs from "../porkers_data";
 import Cards from "./Cards"; 
-import Sort from "./Sort"; 
-import Filter from "./Filter"; 
-import HogForm from "./Form"; // Import HogForm
+import Hogsort from "./Hogsort";
+import Filter from "./Greased"; 
+import HogForm from "./Hogform"; // Import HogForm
 
 function App() {
   const [hogsData, setHogsData] = useState(hogs); // State to manage hogs
@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <Nav />
       <Filter setShowGreased={setShowGreased} />
-      <Sort setSortOption={setSortOption} />
+      <Hogsort setSortOption={setSortOption} />
       <HogForm addHog={addHog} /> {/* Render HogForm and pass addHog */}
       {sortedHogs.map((hog) => (
         <Cards

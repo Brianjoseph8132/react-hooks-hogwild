@@ -1,6 +1,6 @@
 import React from 'react';
 // sortting the hogs 
-const Sort = ({ setSortOption }) => {
+const Hogsort = ({ setSortOption }) => {
   return (
     <div>
       <label>
@@ -16,4 +16,4 @@ const Sort = ({ setSortOption }) => {
 };
 
 
-export default Sort;
+export default Hogsort;
